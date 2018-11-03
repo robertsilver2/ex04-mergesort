@@ -14,6 +14,9 @@
 #include "mergesort.h"
 using edu::vcccd::vc::csv15::mergesort;
 
+
 int main(int argc, char *argv[]) {
-    uint64_T number = fibonacci (3);
+    uint64_t searchTarget = 3;
+    uint64_t array[] = {1, 3 , 3, 7};
+    mergesort(array, searchTarget);
 }
