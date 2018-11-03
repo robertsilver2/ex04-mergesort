@@ -18,5 +18,8 @@ using edu::vcccd::vc::csv15::mergesort;
 int main(int argc, char *argv[]) {
     uint64_t searchTarget = 3;
     uint64_t array[] = {1, 3 , 3, 7};
-    mergesort(array, searchTarget);
+    uint64_t start = 0;
+    uint64_t  end = 3;
+    mergesort(array, start, end);
+    //mergesort(array, searchTarget);
 }
