@@ -15,14 +15,14 @@
 #define EX04_MERGESORT_MERGESORT_H
 
 #include <cstdint>
-
+#include <iostream>
 namespace edu {
     namespace vcccd{
         namespace vc{
             namespace csv15{
                 template<typename>
                     void mergesort(T array[], size_t size){
-                        return;
+                        std::cout << "mergesort test" <<std::endl;
                 }
             }
         }

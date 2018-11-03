@@ -10,12 +10,10 @@
  * @robertsilver2
  */
 
-#include <iostream>
-#include "fibonacci.h"
+#include<iostream>
+#include "mergesort.h"
 using edu::vcccd::vc::csv15::mergesort;
 
 int main(int argc, char *argv[]) {
-    mergesort();
-    exit(0);
+    uint64_T number = fibonacci (3);
 }
-
