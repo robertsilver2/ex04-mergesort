@@ -24,10 +24,13 @@ int main(int argc, char *argv[]) {
     uint64_t  end = size-1;
 
     //DEBUG: print array
+    std::cout << "\n starting array: \n" <<std::endl;
     for(int index = start; index < (end-start+1); index++){
-        std::cout << "array[" << index << "] equals " << array[index] << "\n" << std::endl;
-        std::cout << std::endl;
+        std::cout << "array[" << index << "] equals " << array[index] << std::endl;
     }
+    std::cout << std::endl;
+
+    //Sort initial array
     mergesort(array, start, end);
     //mergesort(array, searchTarget);
 }
