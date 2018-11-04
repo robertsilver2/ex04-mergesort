@@ -16,11 +16,18 @@ using edu::vcccd::vc::csv15::mergesort;
 
 
 int main(int argc, char *argv[]) {
-    uint64_t searchTarget = 3;
+
+    //initialize array and related variables
     uint64_t array[] = {7, 3, 3, 420, 1, 69};
     uint64_t size = 6;
     uint64_t start = 0;
     uint64_t  end = size-1;
+
+    //DEBUG: print array
+    for(int index = start; index < (end-start+1); index++){
+        std::cout << "array[" << index << "] equals " << array[index] << "\n" << std::endl;
+        std::cout << std::endl;
+    }
     mergesort(array, start, end);
     //mergesort(array, searchTarget);
 }
