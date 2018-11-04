@@ -33,6 +33,6 @@ int main(int argc, char *argv[]) {
     //Sort initial array
     mergesort(array, start, end);
     //mergesort(array, searchTarget);
-    
+
 
 }
