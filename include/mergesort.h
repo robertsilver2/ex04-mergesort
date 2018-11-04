@@ -41,6 +41,7 @@ namespace edu {
                             mergesort(array, breakpoint+1, k); //recursive call RHS
 
                             //DEBUG:
+                            std::cout << "ready to merge from " << i << " to " << k << std::endl;
                             std::cout << "midpoint value array[" << breakpoint << "] = " << array[breakpoint] << std::endl;
                             //std::cout << "mergesort (overloaded 3 input) test" <<std::endl;
 
