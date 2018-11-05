@@ -19,8 +19,8 @@ using edu::vcccd::vc::csv15::mergesort;
 int main(int argc, char *argv[]) {
 
     //initialize array and related variables
-    //int64_t array[] = {7, 3, 3, 420, 1, 69};
     int64_t array[] = {1578, 493, 903, 496, 519, 365, 108, 33, 1639, 613, 1468, 1063, 1776, 464, 1950, 1463, 1999, 1947, 747, 1320};
+    //array generated @ https://www.random.org/integer-sets/
     uint64_t size = 20;
     uint64_t start = 0;
     uint64_t  end = size-1;
@@ -36,6 +36,13 @@ int main(int argc, char *argv[]) {
     //mergesort2(array, start, end);    //non template int
     mergesort(array, start, end);       //3 param templated
     //mergesort(array, searchTarget);   //2 param templated?
+
+    //DEBUG: print sorted array
+    std::cout << "\n sorted array: \n" <<std::endl;
+    for(int index = start; index < (end-start+1); index++){
+        std::cout << "array[" << index << "] equals " << array[index] << std::endl;
+    }
+    std::cout << std::endl;
 
 
 }
