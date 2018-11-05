@@ -13,12 +13,13 @@
 #include<iostream>
 #include "mergesort.h"
 using edu::vcccd::vc::csv15::mergesort;
+//using edu::vcccd::vc::csv15::mergesort2;
 
 
 int main(int argc, char *argv[]) {
 
     //initialize array and related variables
-    uint64_t array[] = {7, 3, 3, 420, 1, 69};
+    int64_t array[] = {7, 3, 3, 420, 1, 69};
     uint64_t size = 6;
     uint64_t start = 0;
     uint64_t  end = size-1;
@@ -31,8 +32,9 @@ int main(int argc, char *argv[]) {
     std::cout << std::endl;
 
     //Sort initial array
-    mergesort(array, start, end);
-    //mergesort(array, searchTarget);
+    //mergesort2(array, start, end);    //non template int
+    mergesort(array, start, end);       //3 param templated
+    //mergesort(array, searchTarget);   //2 param templated?
 
 
 }
