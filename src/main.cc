@@ -19,8 +19,9 @@ using edu::vcccd::vc::csv15::mergesort;
 int main(int argc, char *argv[]) {
 
     //initialize array and related variables
-    int64_t array[] = {7, 3, 3, 420, 1, 69};
-    uint64_t size = 6;
+    //int64_t array[] = {7, 3, 3, 420, 1, 69};
+    int64_t array[] = {1578, 493, 903, 496, 519, 365, 108, 33, 1639, 613, 1468, 1063, 1776, 464, 1950, 1463, 1999, 1947, 747, 1320};
+    uint64_t size = 20;
     uint64_t start = 0;
     uint64_t  end = size-1;
 
