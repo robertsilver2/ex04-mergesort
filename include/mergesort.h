@@ -16,6 +16,7 @@
 
 #include <cstdint>
 #include <iostream>
+#include <string>
 namespace edu {
     namespace vcccd{
         namespace vc{

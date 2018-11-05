@@ -12,6 +12,7 @@
 
 #include<iostream>
 #include "mergesort.h"
+#include <string>
 using edu::vcccd::vc::csv15::mergesort;
 //using edu::vcccd::vc::csv15::mergesort2;
 
@@ -19,9 +20,11 @@ using edu::vcccd::vc::csv15::mergesort;
 int main(int argc, char *argv[]) {
 
     //initialize array and related variables
-    int64_t array[] = {1578, 493, 903, 496, 519, 365, 108, 33, 1639, 613, 1468, 1063, 1776, 464, 1950, 1463, 1999, 1947, 747, 1320};
+    //int64_t array[] = {1578, 493, 903, 496, 519, 365, 108, 33, 1639, 613, 1468, 1063, 1776, 464, 1950, 1463, 1999, 1947, 747, 1320};
     //array generated @ https://www.random.org/integer-sets/
-    uint64_t size = 20;
+
+    std::string array[] = { "bee", "ape", "key", "day", "zoo", "man" };
+    uint64_t size = 6;
     uint64_t start = 0;
     uint64_t  end = size-1;
 
