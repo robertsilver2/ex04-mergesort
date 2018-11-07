@@ -22,6 +22,7 @@ int main(int argc, char *argv[]) {
     //initialize array and related variables
     int64_t array1[] = {1578, 493, 903, 496, 519, 365, 108, 33, 1639, 613, 1468, 1063, 1776, 464, 1950, 1463, 1999, 1947, 747, 1320};
     //array generated @ https://www.random.org/integer-sets/
+    //int64_t array1[] = {420, 1, 7, 3, 69, 42, 3,};
     uint64_t size = 20;
     uint64_t start = 0;
     uint64_t  end = size-1;
@@ -35,7 +36,7 @@ int main(int argc, char *argv[]) {
 
     //Sort initial array
     //mergesort2(array, start, end);    //non template int
-    mergesort(array1, start, end);       //3 param templated
+    mergesort(array1, size);       //3 param templated
     //mergesort(array, searchTarget);   //2 param templated?
 
     //DEBUG: print sorted array
@@ -62,12 +63,12 @@ int main(int argc, char *argv[]) {
 
     //Sort initial array
     //mergesort2(array, start, end);    //non template int
-    mergesort(array2, startb, endb);       //3 param templated
+    mergesort(array2, sizeb);       //3 param templated
     //mergesort(array, searchTarget);   //2 param templated?
 
     //DEBUG: print sorted array
     std::cout << "\n sorted array2: \n" <<std::endl;
-    for(int index = startb; index < (endb-startb+1); index++){
+    for(uint64_t index = startb; index < (endb-startb+1); index++){
         std::cout << "array2[" << index << "] equals " << array2[index] << std::endl;
     }
     std::cout << std::endl;

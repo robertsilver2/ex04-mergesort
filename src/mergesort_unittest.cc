@@ -144,7 +144,7 @@ namespace {
     TEST_F(MergeSortTest, BasicStringWords) {
         std::string words[MAX_WORDS], randomized[MAX_WORDS];
 
-        readWords("../words", words, MAX_WORDS);
+        readWords("..\\words", words, MAX_WORDS);
         std::copy(words, words + MAX_WORDS, randomized);
 
         std::random_device rd;

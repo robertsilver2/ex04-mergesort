@@ -103,7 +103,7 @@ namespace edu {
 
                 //3 parameter mergesort templated
                 template<typename T> //overloading template with 3 inputs
-                void mergesort(T array[], uint64_t i, uint64_t k){
+                void mergeAndSort(T array[], uint64_t i, uint64_t k){
                     //Debug: what were inputs
                     //std::cout << "mergesort entered" << std::endl;
                     //std::cout << "i = " << i << std::endl;
@@ -113,8 +113,8 @@ namespace edu {
                     //partition/recursive call
                     if(i<k){
                         uint64_t  breakpoint = i + ((k-i)/2);
-                        mergesort(array, i, breakpoint); //recursive call LHS
-                        mergesort(array, breakpoint+1, k); //recursive call RHS
+                        mergeAndSort(array, i, breakpoint); //recursive call LHS
+                        mergeAndSort(array, breakpoint+1, k); //recursive call RHS
 
                         //DEBUG:
                         //std::cout << "ready to merge from " << i << " to " << k << std::endl;
@@ -136,6 +136,20 @@ namespace edu {
                     //}
 
                 }
+
+                //make adapter
+            template <typename T>
+            void mergesort(T array, size_t size){
+                uint64_t i = 0;
+                uint64_t k = size-1;
+                mergeAndSort(array, i, k);
+
+            }
+
+
+
+
+
 
                 //attempt: mergesort class, two parameters inputs
                 /*template<typename T>
