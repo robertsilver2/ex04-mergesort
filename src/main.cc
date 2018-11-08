@@ -19,6 +19,8 @@ using edu::vcccd::vc::csv15::mergesort;
 
 int main(int argc, char *argv[]) {
 
+
+    std::cout << "hello" << std::endl;
     //initialize array and related variables
     int64_t array1[] = {1578, 493, 903, 496, 519, 365, 108, 33, 1639, 613, 1468, 1063, 1776, 464, 1950, 1463, 1999, 1947, 747, 1320};
     //array generated @ https://www.random.org/integer-sets/
