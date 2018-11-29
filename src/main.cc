@@ -51,6 +51,9 @@ int main(int argc, char *argv[]) {
     uint64_t startb = 0;
     uint64_t endb = sizeb-1;
 
+
+    //asdasdasd
+
     //DEBUG: print array
     std::cout << "\n starting array2: \n" << std::endl;
     for(int index = startb; index < (endb-startb+1); index++){
